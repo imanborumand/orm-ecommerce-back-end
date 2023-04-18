@@ -1,0 +1,26 @@
+version: '2'
+services:
+
+
+  #MySQL Service
+  mysql-orm:
+    image: mysql:8.0
+    container_name: mysql-orm
+    restart: always
+    tty: true
+    ports:
+      - "33010:3306"
+    environment:
+      MYSQL_DATABASE: orm
+      MYSQL_ROOT_PASSWORD: s433FF_f4sdfeD3edd4fRfD
+      MYSQL_PASSWORD: s433FF_f4sdfeD3edd4fRfD
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+
+
+
+
+
+
+
+                        
